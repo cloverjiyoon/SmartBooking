@@ -35,12 +35,15 @@ export const updateRoom = async (req, res, next) => {
 }
 
 export const updateRoomAvailability = async (req, res, next) => {
+
+
+
   try {
     await Room.updateOne(
       { "roomNumbers._id": req.params.id },
       {
         $push: {
-          "roomNumbers.$.unavailableDates": req.body.dates
+          "roomNumbers.$.unavailableDates": { $each: req.body.dates }
         },
       }
     );
@@ -89,3 +92,4 @@ export const getRooms = async (req, res, next) => {
     next(err);
   }
 };
+ 
