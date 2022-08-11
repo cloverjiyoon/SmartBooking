@@ -27,9 +27,9 @@ Heroku backend: https://smartbooking-racoonbread-back.herokuapp.com/
 
 ### _Lei Li_
 ---
-- Foucs on Frontend part - main web
-
-- Login and Logout
+- Foucs on Frontend part - set up the framework of the frontend using REACT
+- set up the connection between frontend and backend. REACT fetch and post/put data via Node express API to do the seach
+- register and Login pages and logics. using react login auth context api. 
 
 
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/LandingPage.jpg)
