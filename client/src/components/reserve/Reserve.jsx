@@ -21,6 +21,7 @@ const Reserve = ({ setOpen, hotelId }) => {
     const end = new Date(endDate);
 
     const date = new Date(start.getTime());
+    
 
     const dates = [];
 
@@ -35,6 +36,10 @@ const Reserve = ({ setOpen, hotelId }) => {
   const alldates = getDatesInRange(dates[0].startDate, dates[0].endDate);
 
   const isAvailable = (roomNumber) => {
+    console.log("room unavailable dates: " , roomNumber.unavailableDates);
+    console.log("alldates", alldates);
+
+
     const isFound = roomNumber.unavailableDates.some((date) =>
       alldates.includes(new Date(date).getTime())
     );
@@ -85,7 +90,9 @@ const Reserve = ({ setOpen, hotelId }) => {
               <div className="rMax">
                 Max people: <b>{item.maxPeople}</b>
               </div>
-              <div className="rPrice">{item.price}</div>
+              <div className="rPrice">
+              Price: <b>{item.price} USD</b>
+              </div>
             </div>
             <div className="rSelectRooms">
               {item.roomNumbers.map((roomNumber) => (
