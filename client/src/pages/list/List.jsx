@@ -110,7 +110,6 @@ const List = () => {
               "loading"
             ) : (
               <>
-                <p>Here goes the search results - Lei</p>
                 {data.map((item) => (
                   <SearchItem item={item} key={item._id} />
                 ))}

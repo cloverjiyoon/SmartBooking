@@ -7,7 +7,6 @@ const FeaturedProperties = () => {
 
   return (
     <div className="fp">
-      <p> Contents should be fetched from backend. (suggest to add alternative imags if the imags doesn't exist) - Lei</p>
       {loading ? (
         "Loading"
       ) : (
@@ -15,7 +14,7 @@ const FeaturedProperties = () => {
           {data.map((item) => (
             <div className="fpItem" key={item._id}>
               <img
-                src={item.photos[0]}
+                src={item.photos[0] ? item.photos[0]: "https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg"}
                 alt=""
                 className="fpImg"
               />
