@@ -49,6 +49,10 @@ https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/login.jpg)
 
 - update utils
 
+- forcing on deploy frontend and backend
+
+- adding details for database
+
 
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/SearchResult.jpg)
 *Search Result Page*
