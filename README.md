@@ -9,7 +9,7 @@ Heroku frontend: https://smartbooking-racoonbread-front.herokuapp.com/
 Heroku backend: https://smartbooking-racoonbread-back.herokuapp.com/
 
 
-## Screenshots & Progress
+## Iter 1 Screenshots & Progress
 
 ### _Jiyoon Clover Jeong_
 ---
@@ -49,16 +49,61 @@ https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/login.jpg)
 
 - update utils
 
-- forcing on deploy frontend and backend
-
-- adding details for database
-
 
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/SearchResult.jpg)
 *Search Result Page*
 
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/BookingPage.jpg)
 *Booking Page - NOT completed*
+
+---
+
+## Iter 2 Screenshots & Progress
+
+### _Jiyoon Clover Jeong_
+---
+- Fixed errors in various files in client directory
+- Made app to be deployable condition
+- Aggregating everyone's work in README
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Clover-fixed%20errors.jpeg)
+*Screenshot of modified parts from github repo*
+
+---
+
+
+### _Lei Li_
+---
+- Fixed bug in login panel and function
+- Added logout and resigter functions to both frontend and backend and the db operation.
+- Enable reserve function
+
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Lei_selectRoom)
+*Select Room page*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Lei_Loginemail)
+*New Log-In Page*
+
+---
+
+
+### _Jiajie Danny Yin_
+---
+- Deploying Frontend
+
+- Deploying Backend
+
+- Pushing images to database
+
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Danny_DeployingFrontend)
+*Heroku Frontend *
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Danny_DeployingBackend)
+*Heroku Backend*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Danny_PushImage)
+*Pushing images to DB*
 
 ---
 
