@@ -5,8 +5,8 @@ Team Member: Jiajie Yin, Lei Li, Jiyoon Jeong
 
 Appimage: https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage
 frontend and backend: https://github.ccs.neu.edu/NEU-CS5610-SU22/SmartBooking-RacoonBread
-Heroku frontend: https://smartbooking-racoonbread-front.herokuapp.com/
-Heroku backend: https://smartbooking-racoonbread-back.herokuapp.com/
+Heroku frontend: https://smartbooking-racoon-frontend.herokuapp.com/
+Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
 
 
 ## Iter 1 Screenshots & Progress
