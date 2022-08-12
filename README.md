@@ -29,14 +29,23 @@ Heroku backend: https://smartbooking-racoonbread-back.herokuapp.com/
 ---
 - Foucs on Frontend part - set up the framework of the frontend using REACT
 - set up the connection between frontend and backend. REACT fetch and post/put data via Node express API to do the seach
-- register and Login pages and logics. using react login auth context api. 
-
+- register/Login/logout pages and logics. using react login auth context api. The resister will make POST operation, write the new user into the database. 
+- Acheive the functions to search hotel and room information based on the filter conditions. (GET operation)
+- Reseave rooms in a specific hotel while loged in. (PUT/POST) It will also check the room availability and gray the checkbox if this room has already been booked by others
+- Heroku deployment
+- Help the team to debug.
 
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/LandingPage.jpg)
 *Landing Page*
 
-https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/login.jpg)
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/login.jpg)
 *Log-In Page*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/reserve.png)
+*Reserve Page (the gray checkbox means not availability during this time slot)*
+
+
+
 
 ---
 
@@ -48,10 +57,6 @@ https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/login.jpg)
 - add routes for hotels/rooms/user
 
 - update utils
-
-- forcing on deploy frontend and backend
-
-- adding details for database
 
 
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/SearchResult.jpg)
