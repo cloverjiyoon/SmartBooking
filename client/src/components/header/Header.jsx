@@ -1,10 +1,8 @@
 import {
   faBed,
   faCalendarDays,
-  faCar,
   faPerson,
-  faPlane,
-  faTaxi,
+  faPlane
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
@@ -13,7 +11,7 @@ import { useContext, useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { SearchContext } from "../../context/SearchContext";
 import { AuthContext } from "../../context/AuthContext";
 
@@ -35,7 +33,7 @@ const Header = ({ type }) => {
   });
 
   const navigate = useNavigate();
-  const {user} = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   const handleOption = (name, operation) => {
     setOptions((prev) => {
@@ -46,12 +44,12 @@ const Header = ({ type }) => {
     });
   };
 
-  const {dispatch} = useContext(SearchContext)
+  const { dispatch } = useContext(SearchContext)
 
 
 
   const handleSearch = () => {
-    dispatch({type:"NEW_SEARCH", payload:{destination, dates, options}});
+    dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
     navigate("/hotels", { state: { destination, dates, options } });
   };
 
@@ -64,36 +62,28 @@ const Header = ({ type }) => {
       >
         <div className="headerList">
           <div className="headerListItem active">
-            <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
+            <Link to='/' style={{ color: "inherit", textDecoration: "none" }}>
+              <FontAwesomeIcon icon={faBed} />
+              <span>Stays</span>
+            </Link>
           </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
-          </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faCar} />
-            <span>Car rentals</span>
-          </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faBed} />
-            <span>Attractions</span>
-          </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport taxis</span>
-          </div>
+          {user &&
+            <div className="headerListItem">
+              <Link to='/reservation' style={{ color: "inherit", textDecoration: "none" }}>
+                <FontAwesomeIcon icon={faBed} />
+                <span>My Reservation</span>
+              </Link>
+            </div>
+          }
         </div>
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's Genius.
+              Better Travel, Less Headache
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              Is it your first time using RacoonBooking? Unlock instant 10% saving with a free new account!
             </p>
-            {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
