@@ -19,6 +19,10 @@ const UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    reservations: {
+      type: Array,
+      default: [],
+    },
   },
   { timestamps: true }
 );

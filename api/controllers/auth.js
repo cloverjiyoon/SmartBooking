@@ -16,8 +16,9 @@ export const register = async (req, res, next) => {
         const newUser = new User({
             username: req.body.username,
             email: req.body.email,
-            password: hash
-
+            password: hash,
+            reservations: []
+            
         });
 
         await newUser.save();
@@ -54,7 +55,7 @@ export const login = async (req, res, next) => {
                 httpOnly: true,
             })
             .status(200)
-            .json({details: { ...otherDetails }, isAdmin });
+            .json({ details: { ...otherDetails }, isAdmin });
     } catch (err) {
         next(err);
     }
