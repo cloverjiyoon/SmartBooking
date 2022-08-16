@@ -9,12 +9,15 @@ import useFetch from "../../hooks/useFetch";
 import { useContext, useState } from "react";
 import { SearchContext } from "../../context/SearchContext";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
 const Reserve = ({ setOpen, hotelId }) => {
+
   const [selectedRooms, setSelectedRooms] = useState([]);
-  const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`);
+  const { data } = useFetch(`/hotels/room/${hotelId}`);
+  const { hotelData, loading, error } = useFetch(`/hotels/find/${hotelId}`);
+  console.log(error);
   const { dates } = useContext(SearchContext);
   const { user } = useContext(AuthContext);
 
@@ -23,7 +26,7 @@ const Reserve = ({ setOpen, hotelId }) => {
     const end = new Date(endDate);
 
     const date = new Date(start.getTime());
-    
+
 
     const dates = [];
 
@@ -38,7 +41,7 @@ const Reserve = ({ setOpen, hotelId }) => {
   const alldates = getDatesInRange(dates[0].startDate, dates[0].endDate);
 
   const isAvailable = (roomNumber) => {
-    console.log("room unavailable dates: " , roomNumber.unavailableDates);
+    console.log("room unavailable dates: ", roomNumber.unavailableDates);
     console.log("alldates", alldates);
 
 
@@ -60,6 +63,8 @@ const Reserve = ({ setOpen, hotelId }) => {
   };
 
   const navigate = useNavigate();
+  console.log(hotelData);
+  console.log(hotelId);
 
   const handleClick = async () => {
     try {
@@ -68,12 +73,24 @@ const Reserve = ({ setOpen, hotelId }) => {
           const res = axios.put(`/rooms/availability/${roomId}`, {
             dates: alldates,
           });
-          return res.data;
+
+          // var reserveData = {
+          //   hotel_id: hotelData._id,
+          //   hotel_name: hotelData.name
+          // }
+
+          console.log(user._id);
+          
+          const reservation = axios.put(`/users/${user._id}`, {
+            reservations: hotelData,
+          });
+
+          return reservation.data;
         })
       );
       setOpen(false);
       navigate("/");
-    } catch (err) {}
+    } catch (err) { }
   };
   return (
     <div className="reserve">
@@ -93,7 +110,7 @@ const Reserve = ({ setOpen, hotelId }) => {
                 Max people: <b>{item.maxPeople}</b>
               </div>
               <div className="rPrice">
-              Price: <b>{item.price} USD</b>
+                Price: <b>{item.price} USD</b>
               </div>
             </div>
             <div className="rSelectRooms">

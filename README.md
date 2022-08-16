@@ -116,6 +116,49 @@ Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
 
 ---
 
+## Iter 3 Screenshots & Progress
+
+### _Jiyoon Clover Jeong_
+---
+- Set up 'Stays' and 'My reservation' Page structure, design, and routes.
+
+
+![Image Link]()
+*Heroku Frontend *
+
+![Image Link]()
+*Heroku Frontend *
+
+---
+
+
+### _Lei Li_
+---
+- 
+
+
+![Image Link]()
+*Heroku Frontend *
+
+![Image Link]()
+*Heroku Frontend *
+
+---
+
+
+### _Jiajie Danny Yin_
+---
+- 
+
+
+![Image Link]()
+*Heroku Frontend *
+
+![Image Link]()
+*Heroku Frontend *
+
+
+---
 
 # Getting Started with Create React App
 

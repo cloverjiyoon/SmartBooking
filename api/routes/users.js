@@ -44,7 +44,8 @@ router.get("/:id", getUser);
 //GET ALL
 router.get("/",verifyAdmin, getUsers);
 
-
+// UPDATE User Reservation
 router.put("/reservation/:id", updateUserReservations);
+
 
 export default router;
