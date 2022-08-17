@@ -8,6 +8,9 @@ frontend and backend: https://github.ccs.neu.edu/NEU-CS5610-SU22/SmartBooking-Ra
 Heroku frontend: https://smartbooking-racoon-frontend.herokuapp.com/
 Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
 
+Caution for Users : 
+1. Our app is CASE SENSITIVE and please type all CITY name in SMALL LETTER when you search.
+2. We put three cities which are berlin, madrid, and london in database. Please test the app with those cities as we didn't add a lot of cities in the  world.
 
 ## Iter 1 Screenshots & Progress
 
@@ -120,28 +123,30 @@ Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
 
 ### _Jiyoon Clover Jeong_
 ---
-- Set up 'Stays' and 'My reservation' Page structure, design, and routes.
+- Set up 'Stays' and 'My reservation' Page by creating Components such as reservationHeader and its css files, Page such as reservation and their routes.
 
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Setup.png)
+*Github commit code for new directories and modified files*
 
-![Image Link]()
-*Heroku Frontend *
+- Created and completed the Bootstrap UI component which was not featured in the class demo application. Our Group used Popover and OverlayTrigger from react-bootstrap on 'My reservation' page to show details of hotel information that user booked.
 
-![Image Link]()
-*Heroku Frontend *
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Bootstrap.png)
+*Bootstrapped with Popover and OverlayTrigger*
+
+- Pushed correct and useful final version of data from axios to database for hotel and rooms and tested all the APIs that our group used for this project.
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Insomnia.png)
+*Insomnia records*
 
 ---
 
 
 ### _Lei Li_
 ---
-- 
+- Achieved Receiving data from frontend when user is booking and wrote the data in user database. Managed to display correct reservation information on 'My reservation' tab.
 
-
-![Image Link]()
-*Heroku Frontend *
-
-![Image Link]()
-*Heroku Frontend *
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Lei%20-%20Reservation%20Page.jpeg)
+*My Reservation Page*
 
 ---
 
@@ -152,10 +157,10 @@ Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
 
 
 ![Image Link]()
-*Heroku Frontend *
+*Add Caption*
 
 ![Image Link]()
-*Heroku Frontend *
+*Add Caption*
 
 
 ---

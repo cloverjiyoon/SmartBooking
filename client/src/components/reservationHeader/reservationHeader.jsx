@@ -43,7 +43,7 @@ const ReservationHeader = ({ type }) => {
                   My Reservation
                 </h1>
                 <p className="headerDesc">
-                  Your upcoming Trips are following
+                  Hi, <strong>{user.username}</strong>! Good to see you back!
                 </p>
               </>
             )}
