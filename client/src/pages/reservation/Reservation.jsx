@@ -35,12 +35,12 @@ const Reservation = () => {
         {
           reservations && reservations.map((item) => (
             <div>
-              <div>Hotel Name: <b>{item.hotel_name}</b></div>
-              <div>Room Name: <b>{item.room_title}</b></div>
-              <div>Room Name: <b>{item.room_numbers.map(num => (
+              <div>Hotel Name: <b>{item.reservation.hotelId}</b></div>
+              <div>Room No: <b>{item.reservation.roomNum.map(num => (
                 <b> { num } </b>
               ))}</b></div>
-
+              <div>Start Date: <b>{item.reservation.dateStart}</b></div>
+              <div>End Date: <b>{item.reservation.dateEnd}</b></div>
             </div>
 
           ))

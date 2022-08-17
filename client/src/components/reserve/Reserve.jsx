@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 import useFetch from "../../hooks/useFetch";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { SearchContext } from "../../context/SearchContext";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -16,10 +16,26 @@ const Reserve = ({ setOpen, hotelId }) => {
 
   const [selectedRooms, setSelectedRooms] = useState([]);
   const { data } = useFetch(`/hotels/room/${hotelId}`);
-  const { hotelData, loading, error } = useFetch(`/hotels/find/${hotelId}`);
-  console.log(error);
+  console.log(`/hotels/find/${hotelId}`);
+  const  { hotelData, loading, error } = useFetch(`/hotels/find/${hotelId}`);
+  console.log("hotelData", loading ? ("loading") : hotelData);
   const { dates } = useContext(SearchContext);
   const { user } = useContext(AuthContext);
+
+  const [reservation, setReservation] = useState({})
+
+  useEffect(()=>{
+    if (dates) {
+      const reservation = {
+        "hotelId": hotelId,
+        "roomNum": selectedRooms,
+        "dateStart": dates[0].startDate,
+        "dateEnd": dates[0].endDate
+      }
+      setReservation(reservation)
+    }
+  }, [hotelData, selectedRooms, dates])
+
 
   const getDatesInRange = (startDate, endDate) => {
     const start = new Date(startDate);
@@ -63,8 +79,6 @@ const Reserve = ({ setOpen, hotelId }) => {
   };
 
   const navigate = useNavigate();
-  console.log(hotelData);
-  console.log(hotelId);
 
   const handleClick = async () => {
     try {
@@ -79,13 +93,15 @@ const Reserve = ({ setOpen, hotelId }) => {
           //   hotel_name: hotelData.name
           // }
 
-          console.log(user._id);
+          console.log("reservation", user._id, hotelData);
           
-          const reservation = axios.put(`/users/${user._id}`, {
-            reservations: hotelData,
-          });
+          if (reservation) {
+            var reser = axios.put(`/users/reservation/${user._id}`, {
+              reservation
+            });
+          }
 
-          return reservation.data;
+          return reser.data;
         })
       );
       setOpen(false);
