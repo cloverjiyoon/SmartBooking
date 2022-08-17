@@ -17,18 +17,34 @@ const Reserve = ({ setOpen, hotelId }) => {
   const [selectedRooms, setSelectedRooms] = useState([]);
   const { data } = useFetch(`/hotels/room/${hotelId}`);
   console.log(`/hotels/find/${hotelId}`);
-  const  { hotelData, loading, error } = useFetch(`/hotels/find/${hotelId}`);
-  console.log("hotelData", loading ? ("loading") : hotelData);
+  const  hotelData = useFetch(`/hotels/find/${hotelId}`);
   const { dates } = useContext(SearchContext);
   const { user } = useContext(AuthContext);
 
   const [reservation, setReservation] = useState({})
 
+
+
+
+
   useEffect(()=>{
+    const roomNums = [];
+    for (const selectedRoom of selectedRooms) {
+      for (const room of data) {
+        for (const roomNum of room.roomNumbers) {
+          console.log(roomNum._id === selectedRoom);
+          if (roomNum._id === selectedRoom) {
+            roomNums.push(roomNum.number)
+          }
+        }
+      }
+    }
+
     if (dates) {
       const reservation = {
-        "hotelId": hotelId,
-        "roomNum": selectedRooms,
+        "hotelName": hotelData.data.name,
+        "hotelPhoto": (hotelData.data.photos ? hotelData.data.photos[0] : "https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp"),
+        "roomNum": roomNums,
         "dateStart": dates[0].startDate,
         "dateEnd": dates[0].endDate
       }
@@ -83,7 +99,7 @@ const Reserve = ({ setOpen, hotelId }) => {
   const handleClick = async () => {
     try {
       await Promise.all(
-        selectedRooms.map((roomId) => {
+        selectedRooms.map((roomId, i) => {
           const res = axios.put(`/rooms/availability/${roomId}`, {
             dates: alldates,
           });
@@ -95,13 +111,13 @@ const Reserve = ({ setOpen, hotelId }) => {
 
           console.log("reservation", user._id, hotelData);
           
-          if (reservation) {
+          if (i === 0 && reservation) {
             var reser = axios.put(`/users/reservation/${user._id}`, {
               reservation
             });
           }
 
-          return reser.data;
+          return res.data;
         })
       );
       setOpen(false);
