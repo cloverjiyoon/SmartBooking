@@ -12,6 +12,64 @@ Caution for Users :
 1. Our app is CASE SENSITIVE and please type all CITY name in SMALL LETTER when you search.
 2. We put three cities which are berlin, madrid, and london in database. Please test the app with those cities as we didn't add a lot of cities in the  world.
 
+## RacconBooking Instruction
+
+### _instruction_
+---
+- The first step user needs to do is to register an account.
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/1.png)
+*Screenshot of Homepage and hint for Register Button*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/2.png)
+*Screenshot of Register Page*
+
+- After login, users can use the search bar located in the middle of the website to find the right hotel. We started by making three cities’ hotels, berlin, madrid, and london(case sensitivity). The beginning time and end time are easy to select. Also can change adults, children, and room numbers. Then Click the search bar.
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/3.png)
+*Screenshot of homepage Page high-light the Search Bar*
+
+- Entering the search page, on the left side, the user still can change parameters to find the better bit hotel. User also can control the price range. On the right side, are the hotels can choose.
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/4.png)
+*Screenshot of Search Page*
+
+- Choose the room. If the box is light gray means, the room has been booked. Then Click the Reserve button.
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/5.png)
+*Screenshot of Hotel infomation Page*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/6.png)
+*Screenshot of Hotel infomation Page with reserve side-page*
+
+- Go to My reservation page, all the reservation shows.
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/7.png)
+*Screenshot of homepage Page high-light the My-Reservation Button*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/8.png)
+*Screenshot of My-Reservation Page with reservation*
+
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/b9fd29c47b12ca0123c8894fe7bbabccb1f4fb42/instruction/9.png)
+*Screenshot of My-Reservation Page without reservation*
+
+
+
+---
+
+
+
+### _project requirements_
+---
+- User interface with data by at least 2 CRUD operations for at least one database table. Create New user, Booking room will update room cannot be booked again and update user, can delete reservation information though backend.
+- At least 3 different UI routes: hotels,rooms,users and auth.
+- At least one Bootstrap: Popover and Overlaytrigger 
+- Different layout and design from the demo application
+- React Calendar 
+
+
+---
+
 ## Iter 1 Screenshots & Progress
 
 ### _Jiyoon Clover Jeong_
@@ -138,6 +196,10 @@ Caution for Users :
 ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Insomnia.png)
 *Insomnia records*
 
+- Styled My Reservation Page with Bootstrap component 
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Reservation%20Page%20Style.png)
+*New Reservation Page*
+
 ---
 
 
@@ -153,15 +215,13 @@ Caution for Users :
 
 ### _Jiajie Danny Yin_
 ---
-- 
+- working on Bootstrap
+- working on add details for database
+- working on documentation
 
 
-![Image Link]()
-*Add Caption*
-
-![Image Link]()
-*Add Caption*
-
+![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/149f67f58002f00f3be894dd5b12c97937ff36aa/Iter3_Danny_Bootstrap.png)
+*Try to add bootstrap-Spinner*
 
 ---
 

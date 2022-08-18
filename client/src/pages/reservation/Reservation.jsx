@@ -37,22 +37,36 @@ const Reservation = () => {
             <Navbar />
             <ReservationHeader />
             <div className="reservationContainer">
-                <h1 className="reservationTitle">Your Upcoming Trips</h1>
+                <h1 className="reservationTitle">{(reservations && reservations.length) ? ("Your Upcoming Trips") : ("You have no coming trips. Start your journey by making a reservation :)")}</h1>
                 {
                     reservations && reservations.map((item) => (
 
-                        <Container>
-                            <Row><img src={item.reservation.hotelPhoto}></img></Row>
-                            <Row>
-                                <Col>
-                                    <Row>Hotel Name: <b>{item.reservation.hotelName}</b></Row>
-                                    <Row>Room No: <b>{item.reservation.roomNum.map(num => (
+                        <div className="searchItem">
+                            <img
+                                src={item.reservation.hotelPhoto ? item.reservation.hotelPhoto : "https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-villas_300/dd0d7f8202676306a661aa4f0cf1ffab31286211.jpg"}
+                                alt=""
+                                className="siImg"
+                            />
+                            <div className="siDesc">
+                                <h1 className="siTitle">{item.reservation.hotelName}</h1>
+                                <span className="siTaxiOp">Free Cancellation</span>
+                                <span className="siSubtitle">
+                                    Room Info : <b>{item.reservation.roomNum.map(num => (
                                         <b> {num} </b>
-                                    ))}</b></Row>
-                                    <Row>Start Date: <b>{item.reservation.dateStart.slice(0, 10)}</b></Row>
-                                    <Row>End Date: <b>{item.reservation.dateEnd.slice(0, 10)}</b></Row>
-                                </Col>
-                                <Col>
+                                    ))}</b>
+                                </span>
+                                <span className="siFeatures">{item.desc}</span>
+                                <span className="siCancelOp">Travel Period </span>
+                                <span className="siCancelOpSubtitle">
+                                    Start Date: {item.reservation.dateStart.slice(0, 10)}
+                                </span>
+                                <span className="siCancelOpSubtitle">
+                                    End Date: {item.reservation.dateEnd.slice(0, 10)}
+                                </span>
+                            </div>
+                            <div className="siDetails">
+                                <div className="siDetailTexts">
+                                    <span className="siTaxOp">Please call for cancellation</span>
                                     <OverlayTrigger trigger="click" placement="right" overlay={
                                         <Popover id="popover-basic">
                                             <Popover.Header as="h3">Hotel Info</Popover.Header>
@@ -64,9 +78,11 @@ const Reservation = () => {
                                     }>
                                         <Button variant="success">Details</Button>
                                     </OverlayTrigger>
-                                </Col>
-                            </Row>
-                        </Container>
+                                </div>
+                            </div>
+                        </div>
+
+
                     ))
                 }
                 <MailList />
