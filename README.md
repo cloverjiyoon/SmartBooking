@@ -4,7 +4,7 @@ This App will help travelers browse and book hotels.
 Team Member: Jiajie Yin, Lei Li, Jiyoon Jeong
 
 Appimage: https://github.com/CloverJiyoon/SmartBooking-Image
-frontend and backend: https://github.ccs.neu.edu/NEU-CS5610-SU22/SmartBooking-RacoonBread
+frontend and backend: https://github.com/CloverJiyoon/SmartBooking
 Heroku frontend: https://smartbooking-racoon-frontend.herokuapp.com/
 Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
 
