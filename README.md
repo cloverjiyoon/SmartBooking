@@ -3,7 +3,7 @@
 This App will help travelers browse and book hotels.
 Team Member: Jiajie Yin, Lei Li, Jiyoon Jeong
 
-Appimage: https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage
+Appimage: https://github.com/CloverJiyoon/SmartBooking-Image
 frontend and backend: https://github.ccs.neu.edu/NEU-CS5610-SU22/SmartBooking-RacoonBread
 Heroku frontend: https://smartbooking-racoon-frontend.herokuapp.com/
 Heroku backend: https://smartbooking-racoon-backend.herokuapp.com/
@@ -18,39 +18,39 @@ Caution for Users :
 ---
 - The first step user needs to do is to register an account.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/1.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/1.png)
 *Screenshot of Homepage and hint for Register Button*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/2.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/2.png)
 *Screenshot of Register Page*
 
 - After login, users can use the search bar located in the middle of the website to find the right hotel. We started by making three cities’ hotels, berlin, madrid, and london(case sensitivity). The beginning time and end time are easy to select. Also can change adults, children, and room numbers. Then Click the search bar.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/3.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/3.png)
 *Screenshot of homepage Page high-light the Search Bar*
 
 - Entering the search page, on the left side, the user still can change parameters to find the better bit hotel. User also can control the price range. On the right side, are the hotels can choose.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/4.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/4.png)
 *Screenshot of Search Page*
 
 - Choose the room. If the box is light gray means, the room has been booked. Then Click the Reserve button.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/5.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/5.png)
 *Screenshot of Hotel infomation Page*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/6.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/6.png)
 *Screenshot of Hotel infomation Page with reserve side-page*
 
 - Go to My reservation page, all the reservation shows.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/7.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/7.png)
 *Screenshot of homepage Page high-light the My-Reservation Button*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/32d3524ad62d850179170a2eaa4982ee739c90df/instruction/8.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/8.png)
 *Screenshot of My-Reservation Page with reservation*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/b9fd29c47b12ca0123c8894fe7bbabccb1f4fb42/instruction/9.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/instruction/9.png)
 *Screenshot of My-Reservation Page without reservation*
 
 
@@ -72,22 +72,18 @@ Caution for Users :
 
 ## Iter 1 Screenshots & Progress
 
-### _Jiyoon Clover Jeong_
 ---
-- Starter person. Finished setting up all the file structure of api, .env, .gitignore. Mainly worked on backend.
+- Finished setting up all the file structure of api, .env, .gitignore. Mainly worked on backend.
 - Set up connection between Node.js and MongoDB and installed necessary modules.
 - Set up first API using Node.js and mongoDB CRUD Operations
 - Set up Express Error Handling and MongoDB Authentication
 - Set up JWT with Cookie
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/BackendSetup-Clover.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/BackendSetup-Clover.png)
 *Screenshot of api folder structure and some code*
 
 ---
 
-
-### _Lei Li_
----
 - Foucs on Frontend part - set up the framework of the frontend using REACT
 - set up the connection between frontend and backend. REACT fetch and post/put data via Node express API to do the seach
 - register/Login/logout pages and logics. using react login auth context api. The resister will make POST operation, write the new user into the database. 
@@ -96,22 +92,16 @@ Caution for Users :
 - Heroku deployment
 - Help the team to debug.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/LandingPage.jpg)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/LandingPage.jpg)
 *Landing Page*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/login.jpg)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/login.jpg)
 *Log-In Page*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/reserve.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/reserve.png)
 *Reserve Page (the gray checkbox means not availability during this time slot)*
 
 
-
-
----
-
-
-### _Jiajie Danny Yin_
 ---
 - update cotrollers for room
 
@@ -120,46 +110,34 @@ Caution for Users :
 - update utils
 
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/SearchResult.jpg)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/SearchResult.jpg)
 *Search Result Page*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/BookingPage.jpg)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/BookingPage.jpg)
 *Booking Page - NOT completed*
 
----
-
-## Iter 2 Screenshots & Progress
-
-### _Jiyoon Clover Jeong_
 ---
 - Fixed errors in various files in client directory
 - Made app to be deployable condition
 - Aggregating everyone's work in README
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Clover-fixed%20errors.jpeg)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter2_Clover-fixed%20errors.jpeg)
 *Screenshot of modified parts from github repo*
 
----
-
-
-### _Lei Li_
 ---
 - Fixed bug in login panel and function
 - Added logout and resigter functions to both frontend and backend and the db operation.
 - Enable reserve function
 
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Lei_selectRoom)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter2_Lei_selectRoom)
 *Select Room page*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Lei_Loginemail)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter2_Lei_Loginemail)
 *New Log-In Page*
 
 ---
 
-
-### _Jiajie Danny Yin_
----
 - Deploying Frontend
 
 - Deploying Backend
@@ -167,47 +145,40 @@ Caution for Users :
 - Pushing images to database
 
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Danny_DeployingFrontend)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter2_Danny_DeployingFrontend)
 *Heroku Frontend *
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Danny_DeployingBackend)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter2_Danny_DeployingBackend)
 *Heroku Backend*
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter2_Danny_PushImage)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter2_Danny_PushImage)
 *Pushing images to DB*
 
 ---
 
-## Iter 3 Screenshots & Progress
-
-### _Jiyoon Clover Jeong_
----
 - Set up 'Stays' and 'My reservation' Page by creating Components such as reservationHeader and its css files, Page such as reservation and their routes.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Setup.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter3.0%20-%20Clover%20-%20Setup.png)
 *Github commit code for new directories and modified files*
 
 - Created and completed the Bootstrap UI component which was not featured in the class demo application. Our Group used Popover and OverlayTrigger from react-bootstrap on 'My reservation' page to show details of hotel information that user booked.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Bootstrap.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter3.0%20-%20Clover%20-%20Bootstrap.png)
 *Bootstrapped with Popover and OverlayTrigger*
 
 - Pushed correct and useful final version of data from axios to database for hotel and rooms and tested all the APIs that our group used for this project.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Insomnia.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter3.0%20-%20Clover%20-%20Insomnia.png)
 *Insomnia records*
 
 - Styled My Reservation Page with Bootstrap component 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Clover%20-%20Reservation%20Page%20Style.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter3.0%20-%20Clover%20-%20Reservation%20Page%20Style.png)
 *New Reservation Page*
 
 ---
 
-
-### _Lei Li_
----
 - Achieved Receiving data from frontend when user is booking and wrote the data in user database. Managed to display correct reservation information on 'My reservation' tab.
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/main/Iter3.0%20-%20Lei%20-%20Reservation%20Page.jpeg)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter3.0%20-%20Lei%20-%20Reservation%20Page.jpeg)
 *My Reservation Page*
 
 ---
@@ -220,7 +191,7 @@ Caution for Users :
 - working on documentation
 
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/BookingAppImage/blob/149f67f58002f00f3be894dd5b12c97937ff36aa/Iter3_Danny_Bootstrap.png)
+![Image Link](https://github.com/CloverJiyoon/SmartBooking-Image/blob/main/Iter3_Danny_Bootstrap.png)
 *Try to add bootstrap-Spinner*
 
 ---
